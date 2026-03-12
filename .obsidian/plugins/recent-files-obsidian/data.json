@@ -5,12 +5,16 @@
       "path": "000 日记/2026-03-12.md"
     },
     {
-      "basename": "Daily Template",
-      "path": "999 Templates/Daily Template.md"
-    },
-    {
       "basename": "我的成长足迹",
       "path": "000 日记/我的成长足迹.md"
+    },
+    {
+      "basename": "测试",
+      "path": "测试.md"
+    },
+    {
+      "basename": "Daily Template",
+      "path": "999 Templates/Daily Template.md"
     },
     {
       "basename": "2026-03-11",
@@ -31,10 +35,6 @@
     {
       "basename": "测试白板",
       "path": "测试白板.canvas"
-    },
-    {
-      "basename": "测试",
-      "path": "测试.md"
     }
   ],
   "omittedPaths": [],
