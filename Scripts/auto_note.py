@@ -10,7 +10,10 @@ client = genai.Client(api_key="AIzaSyAr0pnh1EvT891oHt-MZQ3uaON99SC7i0E")
 # 【关键点】定义根目录。因为脚本在 Scripts 里，笔记在外面，所以用 ..
 CORE_DIR = ".." 
 note_name = "测试笔记.md" 
-
+# 脚本在 Scripts 文件夹，笔记在上一层
+CORE_DIR = ".." 
+# 这是一个真实的测试文件
+note_name = "2026超级个体计划.md"
 def summarize_my_note():
     try:
         # 使用 os.path.join 把路径和文件名拼起来
