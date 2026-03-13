@@ -69,4 +69,11 @@ def check_system():
     print("\n🚀 [系统准备就绪] 你可以运行 chat.py 或其他自动化脚本了。")
 
 if __name__ == "__main__":
-    check_system()
+    try:
+        check_system()
+    except KeyboardInterrupt:
+        # 有时 Python 仍会接收到中断信号，确保优雅退出
+        print("\n操作被用户中断，返回菜单。")
+        # 退出码0，避免批处理认为出错
+        import sys
+        sys.exit(0)
