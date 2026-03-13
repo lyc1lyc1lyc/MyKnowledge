@@ -8,6 +8,8 @@ import subprocess
 import sys
 
 def check_gemini_cli():
+    print("[debug] PATH=", subprocess.run(['echo', '%PATH%'], capture_output=True, text=True, shell=True).stdout)
+    print("[debug] where gemini ->", subprocess.run(['where', 'gemini'], capture_output=True, text=True, shell=True).stdout)
     try:
         # 尝试运行 gemini --version 命令
         result = subprocess.run(['gemini', '--version'],
