@@ -1,11 +1,30 @@
 from google import genai
 import os
+import time
 
 # --- 1. 配置区 ---
 os.environ["HTTP_PROXY"] = "http://127.0.0.1:7890"
 os.environ["HTTPS_PROXY"] = "http://127.0.0.1:7890"
 
 client = genai.Client(api_key="AIzaSyAr0pnh1EvT891oHt-MZQ3uaON99SC7i0E")
+
+def retry_on_429(func, *args, **kwargs):
+    while True:
+        try:
+            return func(*args, **kwargs)
+        except Exception as e:
+            if "429" in str(e):
+                print("⚠️ 遇到429错误，等待60秒后重试... (按Ctrl+C可中断)")
+                try:
+                    for i in range(60, 0, -1):
+                        print(f"倒计时: {i} 秒", end='\r')
+                        time.sleep(1)
+                    print("继续重试...")
+                except KeyboardInterrupt:
+                    print("\n重试被用户中断。")
+                    raise
+            else:
+                raise
 
 # 【关键点】定义根目录。因为脚本在 Scripts 里，笔记在外面，所以用 ..
 CORE_DIR = ".." 
@@ -30,7 +49,7 @@ def summarize_my_note():
 
         print(f"📖 正在阅读上一级目录的笔记: {note_name}...")
 
-        response = client.models.generate_content(
+        response = retry_on_429(client.models.generate_content,
             model="gemini-2.0-flash", 
             contents=f"请用一句话总结下面这篇 Obsidian 笔记的核心内容：\n\n{note_content}"
         )

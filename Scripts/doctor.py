@@ -2,6 +2,7 @@ from google import genai
 from google.genai import errors
 import os
 import requests
+import time
 
 # --- 配置区 ---
 API_KEY = "AIzaSyAr0pnh1EvT891oHt-MZQ3uaON99SC7i0E"
@@ -9,6 +10,24 @@ PROXY_URL = "http://127.0.0.1:7890"
 
 os.environ["HTTP_PROXY"] = PROXY_URL
 os.environ["HTTPS_PROXY"] = PROXY_URL
+
+def retry_on_429(func, *args, **kwargs):
+    while True:
+        try:
+            return func(*args, **kwargs)
+        except Exception as e:
+            if "429" in str(e):
+                print("  ⚠️ 遇到429错误，等待60秒后重试... (按Ctrl+C可中断)")
+                try:
+                    for i in range(60, 0, -1):
+                        print(f"  倒计时: {i} 秒", end='\r')
+                        time.sleep(1)
+                    print("  继续重试...")
+                except KeyboardInterrupt:
+                    print("\n  重试被用户中断。")
+                    raise
+            else:
+                raise
 
 def check_system():
     print("🔍 [1/3] 正在检查网络连接 (代理测试)...")
@@ -25,7 +44,7 @@ def check_system():
     client = genai.Client(api_key=API_KEY)
     try:
         # 发送一个超短请求测试额度
-        response = client.models.generate_content(
+        response = retry_on_429(client.models.generate_content,
             model="gemini-2.0-flash", contents="pong"
         )
         print("  ✅ API 正常：额度充足，可以继续建设数据库。")
