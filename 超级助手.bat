@@ -17,10 +17,10 @@ echo [4] 退出
 echo ===========================================
 set /p opt=请选择编号: 
 
-:: 使用 call 调用 Python，出错或中断后仍会返回批处理
-if %opt%==1 call python "C:\Users\chaoy\obsidian\MyKnowledge\Scripts\doctor.py"
-if %opt%==2 call python "C:\Users\chaoy\obsidian\MyKnowledge\Scripts\chat.py"
-if %opt%==3 call python "C:\Users\chaoy\obsidian\MyKnowledge\Scripts\GraphLinker.py"
+:: 使用 start /b /wait 运行 Python，避免 Ctrl+C 提示并返回菜单
+if %opt%==1 start /b /wait "" python "C:\Users\chaoy\obsidian\MyKnowledge\Scripts\doctor.py"
+if %opt%==2 start /b /wait "" python "C:\Users\chaoy\obsidian\MyKnowledge\Scripts\chat.py"
+if %opt%==3 start /b /wait "" python "C:\Users\chaoy\obsidian\MyKnowledge\Scripts\GraphLinker.py"
 if %opt%==4 exit
 
 echo.
