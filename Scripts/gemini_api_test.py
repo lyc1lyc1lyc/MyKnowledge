@@ -21,7 +21,7 @@ genai.configure(api_key=API_KEY)
 
 try:
     model = genai.GenerativeModel("gemini-1.5-flash")
-    resp = model.generate("请用中文简短介绍一下 Gemini CLI 主要用途，并给出一个小例子。")
+    resp = model.generate_content("请用中文简短介绍一下 Gemini CLI 主要用途，并给出一个小例子。")
     print("\n✅ 调用成功，返回内容：\n")
     print(resp.text)
 except Exception as e:
