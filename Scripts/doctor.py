@@ -65,27 +65,5 @@ def check_system():
     
     print("\n🚀 [系统准备就绪] 你可以运行 chat.py 或其他自动化脚本了。")
 
-def main_menu():
-    while True:
-        print("\n--- 🤖 超级个体数据库助理菜单 ---")
-        print("[1] 系统检查")
-        print("[2] 聊天模式")
-        print("[3] 自动笔记")
-        print("[4] 深度链接发现 (GraphLink)")
-        print("[0] 退出")
-        choice = input("请选择: ").strip()
-        if choice == "1":
-            check_system()
-        elif choice == "2":
-            os.system("python Scripts/chat.py")
-        elif choice == "3":
-            os.system("python Scripts/auto_note.py")
-        elif choice == "4":
-            os.system("python Scripts/GraphLinker.py")
-        elif choice == "0":
-            break
-        else:
-            print("无效选择，请重试。")
-
 if __name__ == "__main__":
-    main_menu()
+    check_system()
