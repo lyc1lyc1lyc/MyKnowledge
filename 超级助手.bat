@@ -1,7 +1,7 @@
 @echo off
-:: 关闭 Ctrl+C 加强处理，避免误按中断整个批处理
-break off
-:: 当用户按 Ctrl+C/Break 时跳回菜单而不是询问终止
+:: 取消对 Ctrl+C/Break 的增强处理，以便批处理能接收到中断事件
+::（不再使用 "break off"，否则 ON BREAK 无效）
+:: 当用户按 Ctrl+C/Break 时直接回到菜单
 ON BREAK GOTO menu
 :: 设置编码为UTF-8以支持中文显示
 chcp 65001 >nul
