@@ -26,16 +26,30 @@ def retry_on_429(func, *args, **kwargs):
             else:
                 raise
 
-print("--- 🤖 超级个体数据库助理已上线 (输入 'quit' 退出) ---")
+def main():
+    print("--- 🤖 超级个体数据库助理已上线 (输入 'quit' 退出) ---")
 
-while True:
-    user_input = input("✨ 你想处理什么任务？: ")
-    if user_input.lower() in ['quit', 'exit', '退出']:
-        break
-    
-    # 这里的 stream=True 就是实现“可视化逐字弹出”的关键
-    response = retry_on_429(client.models.generate_content,
-        model="gemini-2.0-flash",
-        contents=user_input,
-    )
-    print(f"\n💎 Gemini: \n{response.text}\n")
+    while True:
+        try:
+            user_input = input("✨ 你想处理什么任务？: ")
+        except KeyboardInterrupt:
+            # 输入阶段被中断
+            print("\n操作被用户中断，返回菜单。")
+            break
+        if user_input.lower() in ['quit', 'exit', '退出']:
+            break
+        
+        # 这里的 stream=True 就是实现“可视化逐字弹出”的关键
+        response = retry_on_429(client.models.generate_content,
+            model="gemini-2.0-flash",
+            contents=user_input,
+        )
+        print(f"\n💎 Gemini: \n{response.text}\n")
+
+if __name__ == "__main__":
+    import sys
+    try:
+        main()
+    except KeyboardInterrupt:
+        print("\n操作被用户中断，返回菜单。")
+        sys.exit(0)
