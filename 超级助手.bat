@@ -1,6 +1,6 @@
 @echo off
-:: 设置编码为GBK以支持中文显示
-chcp 936 >nul
+:: 设置编码为UTF-8以支持中文显示
+chcp 65001 >nul
 
 :menu
 cls
