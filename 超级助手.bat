@@ -15,13 +15,13 @@ echo [4] 退出
 echo ===========================================
 set /p opt=请选择编号: 
 
-:: ����ʹ�þ���·������ֹ��Ϊλ���ƶ������Ҳ����ļ�
+:: 使用完整路径以避免被移动
 if %opt%==1 python "C:\Users\chaoy\obsidian\MyKnowledge\Scripts\doctor.py"
 if %opt%==2 python "C:\Users\chaoy\obsidian\MyKnowledge\Scripts\chat.py"
 if %opt%==3 python "C:\Users\chaoy\obsidian\MyKnowledge\Scripts\GraphLinker.py"
 if %opt%==4 exit
 
 echo.
-echo ������ɣ�����������ز˵�...
+echo 操作完成，按任意键返回菜单...
 pause >nul
 goto menu
