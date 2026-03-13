@@ -1,4 +1,6 @@
 @echo off
+:: 关闭 Ctrl+C 加强处理，避免误按中断整个批处理
+break off
 :: 设置编码为UTF-8以支持中文显示
 chcp 65001 >nul
 
@@ -15,10 +17,10 @@ echo [4] 退出
 echo ===========================================
 set /p opt=请选择编号: 
 
-:: 使用完整路径以避免被移动
-if %opt%==1 python "C:\Users\chaoy\obsidian\MyKnowledge\Scripts\doctor.py"
-if %opt%==2 python "C:\Users\chaoy\obsidian\MyKnowledge\Scripts\chat.py"
-if %opt%==3 python "C:\Users\chaoy\obsidian\MyKnowledge\Scripts\GraphLinker.py"
+:: 使用 call 调用 Python，出错或中断后仍会返回批处理
+if %opt%==1 call python "C:\Users\chaoy\obsidian\MyKnowledge\Scripts\doctor.py"
+if %opt%==2 call python "C:\Users\chaoy\obsidian\MyKnowledge\Scripts\chat.py"
+if %opt%==3 call python "C:\Users\chaoy\obsidian\MyKnowledge\Scripts\GraphLinker.py"
 if %opt%==4 exit
 
 echo.
