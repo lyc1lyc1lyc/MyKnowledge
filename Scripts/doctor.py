@@ -57,6 +57,9 @@ def check_system():
         else:
             print(f"  ❓ 其他 API 错误: {e}")
         return
+    except KeyboardInterrupt:
+        print("\n  操作被用户中断，返回菜单。")
+        return
 
     print("\n🔍 [3/3] 数据库文件环境检查...")
     # 检查 MyKnowledge 是否有 .md 文件
