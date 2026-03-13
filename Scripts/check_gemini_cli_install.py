@@ -11,11 +11,12 @@ def check_gemini_cli():
     print("[debug] PATH=", subprocess.run(['echo', '%PATH%'], capture_output=True, text=True, shell=True).stdout)
     print("[debug] where gemini ->", subprocess.run(['where', 'gemini'], capture_output=True, text=True, shell=True).stdout)
     try:
-        # 尝试运行 gemini --version 命令
+        # 尝试运行 gemini --version 命令，使用shell=True以使用系统PATH
         result = subprocess.run(['gemini', '--version'],
                               capture_output=True,
                               text=True,
-                              timeout=10)
+                              timeout=10,
+                              shell=True)
 
         if result.returncode == 0:
             print("✅ Gemini CLI 已正常安装！")
