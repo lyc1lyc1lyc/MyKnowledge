@@ -5,6 +5,18 @@
       "path": "000 日记/2026-03-13.md"
     },
     {
+      "basename": "测试笔记",
+      "path": "测试笔记.md"
+    },
+    {
+      "basename": "2026-03-12",
+      "path": "000 日记/2026-03-12.md"
+    },
+    {
+      "basename": "Daily Template",
+      "path": "999 Templates/Daily Template.md"
+    },
+    {
       "basename": "file-20260313191704004",
       "path": "000 日记/assets/2026-03-13/file-20260313191704004.png"
     },
@@ -45,20 +57,8 @@
       "path": "欢迎.md"
     },
     {
-      "basename": "测试笔记",
-      "path": "测试笔记.md"
-    },
-    {
-      "basename": "2026-03-12",
-      "path": "000 日记/2026-03-12.md"
-    },
-    {
       "basename": "我的成长足迹",
       "path": "000 日记/我的成长足迹.md"
-    },
-    {
-      "basename": "Markdown 全语法速查表",
-      "path": "999 Templates/Markdown 全语法速查表.md"
     }
   ],
   "omittedPaths": [],
