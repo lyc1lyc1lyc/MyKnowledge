@@ -1,6 +1,14 @@
 {
   "recentFiles": [
     {
+      "basename": "测试笔记",
+      "path": "测试笔记.md"
+    },
+    {
+      "basename": "欢迎",
+      "path": "欢迎.md"
+    },
+    {
       "basename": "gemini cli使用",
       "path": "gemini cli使用.md"
     },
@@ -9,20 +17,12 @@
       "path": "未命名.base"
     },
     {
-      "basename": "测试笔记",
-      "path": "测试笔记.md"
-    },
-    {
       "basename": "2026-03-12",
       "path": "000 日记/2026-03-12.md"
     },
     {
       "basename": "测试白板",
       "path": "测试白板.canvas"
-    },
-    {
-      "basename": "欢迎",
-      "path": "欢迎.md"
     },
     {
       "basename": "file-20260312195916935",
