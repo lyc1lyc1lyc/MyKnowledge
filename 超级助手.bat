@@ -5,14 +5,15 @@ chcp 936 >nul
 :menu
 cls
 echo ===========================================
-echo    2026 �������壺���ݿ�����ն�
+echo    2026 超级助手数据库工具
 echo ===========================================
-echo [1] ϵͳ�Լ� (Doctor)
-echo [2] ���� AI ���� (Chat)
-echo [3] GraphLinker.py (˫�����ȼ�����)
-echo [4] �˳�
+echo [1] 系统检查 (Doctor)
+echo [2] 聊天模式 (Chat)
+echo [3] GraphLinker.py (双链灵感触发器)
+echo [4] 退出
+
 echo ===========================================
-set /p opt=��ѡ��������: 
+set /p opt=请选择编号: 
 
 :: ����ʹ�þ���·������ֹ��Ϊλ���ƶ������Ҳ����ļ�
 if %opt%==1 python "C:\Users\chaoy\obsidian\MyKnowledge\Scripts\doctor.py"
