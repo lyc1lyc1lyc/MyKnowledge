@@ -1,12 +1,16 @@
 {
   "recentFiles": [
     {
-      "basename": "未命名",
-      "path": "未命名.base"
-    },
-    {
       "basename": "gemini cli使用",
       "path": "999 Templates/gemini cli使用.md"
+    },
+    {
+      "basename": "测试白板",
+      "path": "测试白板.canvas"
+    },
+    {
+      "basename": "未命名",
+      "path": "未命名.base"
     },
     {
       "basename": "Daily Template",
@@ -51,10 +55,6 @@
     {
       "basename": "测试",
       "path": "测试.md"
-    },
-    {
-      "basename": "测试白板",
-      "path": "测试白板.canvas"
     }
   ],
   "omittedPaths": [],
