@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "测试",
+      "path": "测试.md"
+    },
+    {
       "basename": "gemini cli使用",
       "path": "999 Templates/gemini cli使用.md"
     },
@@ -55,10 +59,6 @@
     {
       "basename": "2026-03-11",
       "path": "000 日记/2026-03-11.md"
-    },
-    {
-      "basename": "测试",
-      "path": "测试.md"
     }
   ],
   "omittedPaths": [],
