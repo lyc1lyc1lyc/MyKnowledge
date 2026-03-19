@@ -58,16 +58,16 @@
       "yaml-sort-order-for-other-keys": "None"
     },
     "yaml-timestamp": {
-      "enabled": true,
+      "enabled": false,
       "date-created": true,
-      "date-created-key": "created",
+      "date-created-key": "date created",
       "date-created-source-of-truth": "file system",
       "date-modified": true,
-      "date-modified-key": "updated",
+      "date-modified-key": "date modified",
       "date-modified-source-of-truth": "file system",
-      "format": "YYYY-MM-DD HH:mm",
+      "format": "dddd, MMMM Do YYYY, h:mm:ss a",
       "convert-to-utc": false,
-      "update-on-file-contents-updated": "after 10 seconds"
+      "update-on-file-contents-updated": "never"
     },
     "yaml-title": {
       "enabled": false,
@@ -271,7 +271,7 @@
       "enabled": false
     }
   },
-  "lintOnSave": true,
+  "lintOnSave": false,
   "recordLintOnSaveLogs": false,
   "displayChanged": true,
   "suppressMessageWhenNoChange": false,
