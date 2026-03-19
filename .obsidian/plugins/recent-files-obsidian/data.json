@@ -5,6 +5,14 @@
       "path": "2026.md"
     },
     {
+      "basename": "Daily Template",
+      "path": "999 Templates/Daily Template.md"
+    },
+    {
+      "basename": "Markdown 全语法速查表",
+      "path": "999 Templates/Markdown 全语法速查表.md"
+    },
+    {
       "basename": "测试",
       "path": "测试.md"
     },
@@ -17,16 +25,8 @@
       "path": "未命名.base"
     },
     {
-      "basename": "Daily Template",
-      "path": "999 Templates/Daily Template.md"
-    },
-    {
       "basename": "笔记属性",
       "path": "999 Templates/笔记属性.md"
-    },
-    {
-      "basename": "Markdown 全语法速查表",
-      "path": "999 Templates/Markdown 全语法速查表.md"
     }
   ],
   "omittedPaths": [],
