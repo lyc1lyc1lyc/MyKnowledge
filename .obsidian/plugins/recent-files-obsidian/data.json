@@ -5,12 +5,16 @@
       "path": "000 日记/2026-03-19.md"
     },
     {
-      "basename": "测试",
-      "path": "测试.md"
-    },
-    {
       "basename": "我的成长足迹",
       "path": "000 日记/我的成长足迹.md"
+    },
+    {
+      "basename": "2026-03-12",
+      "path": "000 日记/2026-03-12.md"
+    },
+    {
+      "basename": "测试",
+      "path": "测试.md"
     },
     {
       "basename": "Daily Template",
@@ -31,10 +35,6 @@
     {
       "basename": "file-20260312210513205",
       "path": "000 日记/assets/2026-03-12/file-20260312210513205.jpg"
-    },
-    {
-      "basename": "2026-03-12",
-      "path": "000 日记/2026-03-12.md"
     },
     {
       "basename": "测试白板",
