@@ -5,6 +5,18 @@
       "path": "2026.md"
     },
     {
+      "basename": "测试",
+      "path": "测试.md"
+    },
+    {
+      "basename": "测试白板",
+      "path": "测试白板.canvas"
+    },
+    {
+      "basename": "未命名",
+      "path": "未命名.base"
+    },
+    {
       "basename": "Daily Template",
       "path": "999 Templates/Daily Template.md"
     },
@@ -15,18 +27,6 @@
     {
       "basename": "Markdown 全语法速查表",
       "path": "999 Templates/Markdown 全语法速查表.md"
-    },
-    {
-      "basename": "未命名",
-      "path": "未命名.base"
-    },
-    {
-      "basename": "欢迎",
-      "path": "欢迎.md"
-    },
-    {
-      "basename": "测试",
-      "path": "测试.md"
     }
   ],
   "omittedPaths": [],
