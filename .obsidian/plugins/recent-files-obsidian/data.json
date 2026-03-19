@@ -1,12 +1,28 @@
 {
   "recentFiles": [
     {
-      "basename": "2026",
-      "path": "2026.md"
+      "basename": "《寄生虫》复制的影评",
+      "path": "- 浮生札记/观影手记/《寄生虫》复制的影评.md"
+    },
+    {
+      "basename": "《寄生虫》",
+      "path": "- 浮生札记/观影手记/《寄生虫》.md"
     },
     {
       "basename": "Daily Template",
       "path": "999 Templates/Daily Template.md"
+    },
+    {
+      "basename": "2026",
+      "path": "2026.md"
+    },
+    {
+      "basename": "2026-03-11",
+      "path": "000 日记/2026-03-11.md"
+    },
+    {
+      "basename": "笔记属性",
+      "path": "999 Templates/笔记属性.md"
     },
     {
       "basename": "Markdown 全语法速查表",
@@ -23,10 +39,6 @@
     {
       "basename": "未命名",
       "path": "未命名.base"
-    },
-    {
-      "basename": "笔记属性",
-      "path": "999 Templates/笔记属性.md"
     }
   ],
   "omittedPaths": [],
