@@ -1,13 +1,3 @@
 .obsidian/workspace.json
 .obsidian/workspace-mobile.json
 .obsidian/plugins/remember-cursor-position/cursor-positions.json
-# 忽略工作区布局（最容易冲突的文件）
-.obsidian/workspace
-.obsidian/workspace.json
-
-# 忽略插件的缓存数据（比如你报错的那个最近文件列表）
-.obsidian/plugins/*/data.json
-
-# 如果你不想同步某些特定的日志或缓存
-.DS_Store
-node_modules/
