@@ -1,13 +1,4 @@
 {
-  "obsidian-git:push2": [
-    {
-      "modifiers": [
-        "Alt",
-        "Mod"
-      ],
-      "key": "P"
-    }
-  ],
   "obsidian-git:push": [
     {
       "modifiers": [
@@ -17,6 +8,15 @@
     }
   ],
   "obsidian-git:pull": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod"
+      ],
+      "key": "P"
+    }
+  ],
+  "obsidian-git:push2": [
     {
       "modifiers": [
         "Alt",
