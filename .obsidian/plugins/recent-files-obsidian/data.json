@@ -5,12 +5,20 @@
       "path": "- 浮生札记/健身/营养/蛋白质.md"
     },
     {
-      "basename": "豆浆",
-      "path": "- 浮生札记/健身/营养/豆浆.md"
+      "basename": "2026-03-21",
+      "path": "000 日记/2026-03-21.md"
+    },
+    {
+      "basename": "Daily Template",
+      "path": "999 Templates/Daily Template.md"
     },
     {
       "basename": "2026-03-20",
       "path": "000 日记/2026-03-20.md"
+    },
+    {
+      "basename": "豆浆",
+      "path": "- 浮生札记/健身/营养/豆浆.md"
     },
     {
       "basename": "豆浆科学分析",
@@ -71,10 +79,6 @@
     {
       "basename": "《寄生虫》",
       "path": "- 浮生札记/观影手记/《寄生虫》.md"
-    },
-    {
-      "basename": "Daily Template",
-      "path": "999 Templates/Daily Template.md"
     },
     {
       "basename": "2026-03-11",
