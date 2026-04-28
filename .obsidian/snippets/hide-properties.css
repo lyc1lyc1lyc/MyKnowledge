@@ -1,0 +1,4 @@
+/* 仅在白板模式中隐藏笔记属性区 */
+.canvas-node-content .metadata-container {
+    display: none !important;
+}
